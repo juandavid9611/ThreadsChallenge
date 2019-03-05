@@ -12,7 +12,7 @@ namespace ClassLibraryFunctionality
         public static List<Person> readFile()
         {
             List<Person> resultList = new List<Person>();
-            var reader = new StreamReader(File.OpenRead(".\\Files\\ThreadData.csv"));
+            var reader = new StreamReader(File.OpenRead("\\..\\..\\Files\\ThreadData.csv"));
             while (!reader.EndOfStream)
             {
                 var line = reader.ReadLine();
