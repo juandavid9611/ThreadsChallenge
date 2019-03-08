@@ -8,11 +8,11 @@ namespace ClassLibraryFunctionality
 {
     public class ConsoleApplication
     {
-        public static void printIdAge(Person person)
+        public static void printIdAge(object person)
         {
             DateTime localDate = DateTime.Now;
 
-            Console.WriteLine("Person Id: " + person.Id + " Age: " + CalculateYourAge(person.birthDate));
+            Console.WriteLine("Person Id: " + ((Person)person).Id + " " + CalculateYourAge(((Person)person).BirthDate));
         }
 
         private static string CalculateYourAge(DateTime dob)

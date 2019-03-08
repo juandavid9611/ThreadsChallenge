@@ -27,15 +27,15 @@ namespace ClassLibraryFunctionality
         public string CountryRegionName { get; set; }
         public string PostalCode { get; set; }
         public string PhoneNumber { get; set; }
-        public Nullable<System.DateTime> BirthDate { get; set; }
+        public System.DateTime BirthDate { get; set; }
         public string Education { get; set; }
         public string Occupation { get; set; }
         public string Gender { get; set; }
         public string MaritalStatus { get; set; }
-        public Nullable<int> HomeOwnerflag { get; set; }
-        public Nullable<int> NumberCarsOwned { get; set; }
-        public Nullable<int> NumberChildrenAtHome { get; set; }
-        public Nullable<int> TotalChildren { get; set; }
-        public Nullable<int> YearlyIncome { get; set; }
+        public int HomeOwnerflag { get; set; }
+        public int NumberCarsOwned { get; set; }
+        public int NumberChildrenAtHome { get; set; }
+        public int TotalChildren { get; set; }
+        public int YearlyIncome { get; set; }
     }
 }

@@ -22,16 +22,16 @@
           <Property Name="CountryRegionName" Type="varchar" MaxLength="50" />
           <Property Name="PostalCode" Type="varchar" MaxLength="50" />
           <Property Name="PhoneNumber" Type="varchar" MaxLength="50" />
-          <Property Name="BirthDate" Type="datetime" />
+          <Property Name="BirthDate" Type="datetime" Nullable="false" />
           <Property Name="Education" Type="varchar" MaxLength="50" />
           <Property Name="Occupation" Type="varchar" MaxLength="50" />
           <Property Name="Gender" Type="varchar" MaxLength="50" />
           <Property Name="MaritalStatus" Type="varchar" MaxLength="50" />
-          <Property Name="HomeOwnerflag" Type="int" />
-          <Property Name="NumberCarsOwned" Type="int" />
-          <Property Name="NumberChildrenAtHome" Type="int" />
-          <Property Name="TotalChildren" Type="int" />
-          <Property Name="YearlyIncome" Type="int" />
+          <Property Name="HomeOwnerflag" Type="int" Nullable="false" />
+          <Property Name="NumberCarsOwned" Type="int" Nullable="false" />
+          <Property Name="NumberChildrenAtHome" Type="int" Nullable="false" />
+          <Property Name="TotalChildren" Type="int" Nullable="false" />
+          <Property Name="YearlyIncome" Type="int" Nullable="false" />
         </EntityType>
         <EntityContainer Name="PeopleModelStoreContainer">
           <EntitySet Name="People" EntityType="Self.People" Schema="dbo" store:Type="Tables" />
@@ -58,16 +58,16 @@
           <Property Name="CountryRegionName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="PostalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="BirthDate" Type="DateTime" Precision="3" />
+          <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Education" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Occupation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="MaritalStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="HomeOwnerflag" Type="Int32" />
-          <Property Name="NumberCarsOwned" Type="Int32" />
-          <Property Name="NumberChildrenAtHome" Type="Int32" />
-          <Property Name="TotalChildren" Type="Int32" />
-          <Property Name="YearlyIncome" Type="Int32" />
+          <Property Name="HomeOwnerflag" Type="Int32" Nullable="false" />
+          <Property Name="NumberCarsOwned" Type="Int32" Nullable="false" />
+          <Property Name="NumberChildrenAtHome" Type="Int32" Nullable="false" />
+          <Property Name="TotalChildren" Type="Int32" Nullable="false" />
+          <Property Name="YearlyIncome" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityContainer Name="PeopleEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="People" EntityType="Self.Person" />

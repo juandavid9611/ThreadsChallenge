@@ -12,10 +12,10 @@ namespace ClassLibraryFunctionality
     {
         private static readonly ILog _log = LogManager.GetLogger("Person");
 
-        public static void log(string message)
+        public static void log(object message)
         {
             XmlConfigurator.Configure();
-            _log.Info(message);
+            _log.Info((string)message);
         }
     }
 }

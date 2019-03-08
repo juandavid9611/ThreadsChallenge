@@ -9,9 +9,9 @@ namespace ClassLibraryFunctionality
 {
     public class WriteFile
     {
-        public static void writePersonInformation(Person person) {         
+        public static void writePersonInformation(Object person) {         
             Directory.CreateDirectory("\\..\\..\\Files\\People\\");
-            File.WriteAllText("\\..\\..\\Files\\People\\" + person.id + ".txt", person.toString());
+            File.WriteAllText("\\..\\..\\Files\\People\\" + ((Person)person).Id + ".txt", ((Person)person).ToString());
         }
     }
 }

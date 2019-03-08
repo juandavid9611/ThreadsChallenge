@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="ConsoleApplication.cs" />
     <Compile Include="CVSFile.cs" />
+    <Compile Include="DataBaseManagement.cs" />
     <Compile Include="PeopleModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -73,11 +74,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PeopleModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="PersonLogger.cs" />
-    <Compile Include="ProgramLogger.cs" />
     <Compile Include="Person.cs">
       <DependentUpon>PeopleModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="PersonLogger.cs" />
+    <Compile Include="ProgramLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WriteFile.cs" />
   </ItemGroup>
