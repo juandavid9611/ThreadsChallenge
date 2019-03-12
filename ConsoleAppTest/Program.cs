@@ -48,7 +48,7 @@ namespace ConsoleAppTest
                 {
                     if (opt == 0)
                         return features;
-                    else if(opt == 6)
+                    else if (opt == 6)
                         for (int i = 0; i < 5; i++)
                         {
                             features[i] = true;

@@ -37,11 +37,17 @@ namespace ClassLibraryFunctionality
             if (target == "program")
             {
                 if (type == "info")
+                {
                     program_log.Info((String)message);
+                }
                 if (type == "error")
+                {
                     program_log.Error((String)message);
+                }
                 if (type == "warn")
+                {
                     program_log.Warn((String)message);
+                }
             }
         }
     }

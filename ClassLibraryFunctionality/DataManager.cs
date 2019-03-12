@@ -32,6 +32,7 @@ namespace ClassLibraryFunctionality
                 //thread.Join();
                 if (features[2])
                     LoggersManager.log("success: " + success + " errors: " + errors + " warnings: " + warnings,"program", "info");
+                Console.ReadKey();
             }
         }
         /// <summary>
@@ -70,6 +71,8 @@ namespace ClassLibraryFunctionality
             {
                 if (features[3])
                     LoggersManager.log(stringId + " failed to load: Id type", "person", "error");
+                if (features[2])
+                    LoggersManager.log(id + " presents illegal Type", "program", "error");
                 errors++;
                 return;
             }
@@ -77,6 +80,8 @@ namespace ClassLibraryFunctionality
             {
                 if (features[3])
                     LoggersManager.log(id + " failed to load: BirthDate type", "person", "error");
+                if (features[2])
+                    LoggersManager.log(id + " presents illegal Type", "program", "error");
                 errors++;
                 return;
             }
@@ -84,6 +89,8 @@ namespace ClassLibraryFunctionality
             {
                 if (features[3])
                     LoggersManager.log(id + " failed to load: HomeOwnerFlag type", "person", "error");
+                if (features[2])
+                    LoggersManager.log(id + " presents illegal Type", "program", "error");
                 errors++;
                 return;
             }
@@ -91,6 +98,8 @@ namespace ClassLibraryFunctionality
             {
                 if (features[3])
                     LoggersManager.log(id + " failed to load: NumberCarsOwned type", "person", "error");
+                if (features[2])
+                    LoggersManager.log(id + " presents illegal Type", "program", "error");
                 errors++;
                 return;
             }
@@ -98,6 +107,8 @@ namespace ClassLibraryFunctionality
             {
                 if (features[3])
                     LoggersManager.log(id + " failed to load: NumberChildrenAtHome type", "person", "error");
+                if (features[2])
+                    LoggersManager.log(id + " presents illegal Type", "program", "error");
                 errors++;
                 return;
             }
@@ -105,6 +116,8 @@ namespace ClassLibraryFunctionality
             {
                 if (features[3])
                     LoggersManager.log(id + " failed to load: TotalChildren type", "person", "error");
+                if (features[2])
+                    LoggersManager.log(id + " presents illegal Type", "program", "error");
                 errors++;
                 return;
             }
@@ -112,6 +125,8 @@ namespace ClassLibraryFunctionality
             {
                 if (features[3])
                     LoggersManager.log(id + " failed to load: YearlyIncome type", "person", "error");
+                if (features[2])
+                    LoggersManager.log(id + " presents illegal Type", "program", "error");
                 errors++;
                 return;
             }
@@ -142,7 +157,8 @@ namespace ClassLibraryFunctionality
                 YearlyIncome = yearlyIncome
             };
             executeFunctionalities(person);
-            LoggersManager.log(++count + " records read from CSV file", "program", "info");
+            if (features[2])
+                LoggersManager.log(++count + " records read from CSV file", "program", "info");
 
         }
         /// <summary>
