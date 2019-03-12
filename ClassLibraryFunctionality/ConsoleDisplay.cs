@@ -6,15 +6,23 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryFunctionality
 {
-    public class ConsoleApplication
+    public class ConsoleDisplay
     {
+        /// <summary>
+        /// Print the Id and the age of a person in console
+        /// </summary>
+        /// <param name="person">An instance of a Person</param>
         public static void printIdAge(object person)
         {
             DateTime localDate = DateTime.Now;
 
             Console.WriteLine("Person Id: " + ((Person)person).Id + " " + CalculateYourAge(((Person)person).BirthDate));
         }
-
+        /// <summary>
+        /// Calculate the time between a DateTime and now's time
+        /// </summary>
+        /// <param name="dob">Datetime representing the date of a person's born</param>
+        /// <returns>Returns a string with the age of a person in Age: Year(s) Month(s) Day(s) Hour(s) Second(s) format</returns>
         private static string CalculateYourAge(DateTime dob)
         {
             var now = DateTime.Now;

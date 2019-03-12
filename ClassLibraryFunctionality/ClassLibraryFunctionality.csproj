@@ -56,8 +56,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsoleApplication.cs" />
-    <Compile Include="CVSFile.cs" />
+    <Compile Include="ConsoleDisplay.cs" />
+    <Compile Include="DataManager.cs" />
     <Compile Include="DataBaseManagement.cs" />
     <Compile Include="PeopleModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -77,10 +77,10 @@
     <Compile Include="Person.cs">
       <DependentUpon>PeopleModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="PersonLogger.cs" />
+    <Compile Include="LoggersManager.cs" />
     <Compile Include="ProgramLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WriteFile.cs" />
+    <Compile Include="WriteFileManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
