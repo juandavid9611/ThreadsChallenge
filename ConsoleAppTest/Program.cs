@@ -30,7 +30,7 @@ namespace ConsoleAppTest
         /// <returns>Returns a bool[] representing which features were selected</returns>
         private static bool[] displayMenu()
         {
-            bool[] features = new bool[5];
+            bool[] features = new bool[6];
             string selection;
             Console.WriteLine("Select features you want typing their numbers separate eachone with a space Ex.(0 1 2 3 4 5 6)");
             Console.WriteLine("0 - Nothing");
@@ -40,6 +40,7 @@ namespace ConsoleAppTest
             Console.WriteLine("4- Log the status of each person processed");
             Console.WriteLine("5- Print id and age of the person in console");
             Console.WriteLine("6- All features");
+            Console.WriteLine("7- Color log (Not included in All features. Require to type it and Application log must be on)");
             selection = Console.ReadLine();
             string[] each = selection.Split(' ');
             foreach(string inp in each)
@@ -53,6 +54,8 @@ namespace ConsoleAppTest
                         {
                             features[i] = true;
                         }
+                    else if (opt == 7)
+                        features[5] = true;
                     else
                     {
                         features[opt - 1] = true;

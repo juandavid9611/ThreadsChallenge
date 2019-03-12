@@ -64,9 +64,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibraryFunctionality\ClassLibraryFunctionality.csproj">
+    <ProjectReference Include="..\ClassLibraryFunctionality\BackFunctionality.csproj">
       <Project>{1596471e-107d-4581-b853-4d142e2348a3}</Project>
-      <Name>ClassLibraryFunctionality</Name>
+      <Name>BackFunctionality</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

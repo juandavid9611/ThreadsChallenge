@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppTest", "ConsoleAppTest\ConsoleAppTest.csproj", "{F9C968F7-B1C1-4AED-85DA-78F2A4F75E07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryFunctionality", "ClassLibraryFunctionality\ClassLibraryFunctionality.csproj", "{1596471E-107D-4581-B853-4D142E2348A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackFunctionality", "ClassLibraryFunctionality\BackFunctionality.csproj", "{1596471E-107D-4581-B853-4D142E2348A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

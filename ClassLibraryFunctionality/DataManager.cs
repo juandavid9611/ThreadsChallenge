@@ -30,6 +30,7 @@ namespace ClassLibraryFunctionality
                 Parallel.ForEach(csvR, processDataItem);
                 //Thread thread = Thread.CurrentThread;
                 //thread.Join();
+                Thread.Sleep(3000);
                 if (features[2])
                     LoggersManager.log("success: " + success + " errors: " + errors + " warnings: " + warnings,"program", "info");
                 Console.ReadKey();

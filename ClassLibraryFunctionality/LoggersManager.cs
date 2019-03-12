@@ -15,6 +15,7 @@ namespace ClassLibraryFunctionality
     {
         private static readonly ILog person_log = LogManager.GetLogger("Person");
         private static readonly ILog program_log = LogManager.GetLogger("Program");
+        private static readonly ILog color_log = LogManager.GetLogger("ColoredConsoleAppender");
 
         /// <summary>
         /// Allows to log message in a specific Logger with Log4net
@@ -39,14 +40,20 @@ namespace ClassLibraryFunctionality
                 if (type == "info")
                 {
                     program_log.Info((String)message);
+                    if(DataManager.features[5])
+                        color_log.Info((String)message);
                 }
                 if (type == "error")
                 {
                     program_log.Error((String)message);
+                    if (DataManager.features[5])
+                        color_log.Error((String)message);
                 }
                 if (type == "warn")
                 {
                     program_log.Warn((String)message);
+                    if (DataManager.features[5])
+                        color_log.Warn((String)message);
                 }
             }
         }
